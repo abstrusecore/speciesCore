@@ -12,13 +12,11 @@
 
 <link href="https://fonts.googleapis.com/css?family=Play|VT323" rel="stylesheet"> 
 
-<link href="./basicStyle.css" rel="stylesheet" type="text/css">
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
 
 <script id="speciesTemp" type="text/x-handlebars-template">
     {{#each Carnivora}}
-        <article id="a{{@index}}">
+        <article id="{{@index}}">
             <h1><a href="https://en.wikipedia.org/wiki/{{@key}}" target="_blank">{{@key}}</a></h1>
             {{#each this}}
                 <p><i><a href="https://en.wikipedia.org/wiki/{{@key}}" target="_blank">{{@key}}</a></i></p>
@@ -35,6 +33,8 @@
         
 </script>
 
+<link href="./basicStyle.css" rel="stylesheet" type="text/css">
+
 </head>
 
 
@@ -46,9 +46,12 @@
 
     <nav class="main-nav flex" role="navigation">
         <div class="links">
-            <p class="a0"><a>Canine (Dogs)</a></p>
-            <p class="a1"><a>Felines (Cats)</a></p>
-            <p class="a2"><a>Ursines (Bears)</a></p>
+            <select id="A">
+                <option hidden disabled selected> -- select a category -- </option>
+                <option value="#0">Canine (Dogs)</option>
+                <option value="#1">Feline (Cats)</option>
+                <option value="#2">Ursine (Bears)</option>
+            </select>
         </div>
     </nav>
     <!-- Nav End -->
@@ -65,13 +68,13 @@
     <!-- Handlebars End -->
 
 </main>
-<br>
-<br>
-<hr>
-<br>
 
 <!-- Footer Info -->
-	<footer id="EndInfo">Welcome to speciesCore!<br><br>Here you can learn about the taxonomy, names, locations of various species.</footer>
+	<footer id="EndInfo">
+        <hr>
+        <br>
+        Welcome to speciesCore!<br><br>Here you can learn about the taxonomy, names, locations of various species.
+    </footer>
 
 </div>
 

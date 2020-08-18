@@ -2,7 +2,7 @@ var number = Math.round(Math.random() * 3.49)
 
 $(document).ready(() =>{
   
-  $(`#a${number - 1}`).fadeToggle(700);
+  $(`#${number - 1}`).fadeToggle(700);
 
   $('.links').slideToggle(700);
   $('.uno').toggle();
@@ -14,17 +14,9 @@ $(document).ready(() =>{
     $('.dos').toggle();
   });
 
-  $('.a0').on('click', () => {
-    $('#a0').slideToggle();
-    console.log("woah");
-  });
-  $('.a1').on('click', () => {
-    $('#a1').slideToggle();
-    console.log("woah2");
-  });
-  $('.a2').on('click', () => {
-    $('#a2').slideToggle();
-    console.log("woah3");
+  $('#A').on('change', event => {
+    $(event.target.value).slideToggle();
+    console.log(event.target.value);
   });
   
   });

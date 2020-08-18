@@ -1,8 +1,38 @@
 html {
-    font-size: 14px;
-    font-family: 'Play';
+    font-family: 'Play', 'Courier New', Courier, monospace;
     background-color: black;
     color: white;
+}
+
+@media only screen and (min-width: 400px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 500px) {
+    html {
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 17px;
+    }
 }
 
 a {
@@ -24,7 +54,7 @@ header {
 
 main {
     position: relative;
-    top: 5rem;
+    top: 10rem;
 }
 li {
     line-height: 1.5rem;
@@ -34,10 +64,14 @@ li {
     display: none;
 }
 
-.links p {
-    display: inline-block;
-    margin: 0 2rem;
-    font-size: 1.5rem;
+.links select {
+    margin: 0.5rem auto;
+    font-size: 1.25rem;
+    padding: 0.15rem;
+}
+
+#A {
+    margin: 0.5rem auto;
 }
 
 #goals {
@@ -54,8 +88,7 @@ li {
     display: block;
     text-align: center;
     width: 50%;
-    margin: auto;
-
+    margin: 3rem auto;
 }
 
 .toggler p {
@@ -83,6 +116,7 @@ li {
   clear: both;
 }
 article{
+    font-size: 1rem;
     flex: 1 1 400px;
     margin: 0.5rem 0.5rem;
     padding: 1rem;
@@ -103,6 +137,7 @@ tfoot {
 }
 footer {
     text-align: center;
+    margin-top: 10rem;
 }
 video,
 embed,
