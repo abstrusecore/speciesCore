@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>speciesCore</title>
+
+<meta charset="UTF-8">
+<meta name="Description" content="">
+<meta name="Keywords" content="HTML,CSS,Javascript">
+<meta name="author" content="">
+
+<link href="https://fonts.googleapis.com/css?family=Play|VT323" rel="stylesheet"> 
+
+<link href="./basicStyle.css" rel="stylesheet" type="text/css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+
+<script id="speciesTemp" type="text/x-handlebars-template">
+    {{#each Carnivora}}
+        <article id="a{{@index}}">
+            <h1><a href="https://en.wikipedia.org/wiki/{{@key}}" target="_blank">{{@key}}</a></h1>
+            {{#each this}}
+                <p><i><a href="https://en.wikipedia.org/wiki/{{@key}}" target="_blank">{{@key}}</a></i></p>
+
+                <ul>
+                    {{#each this}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                
+            {{/each}}
+        </article>
+    {{/each}}
+        
+</script>
+
+</head>
+
+
+<body>
+
+<header>
+    <!-- Nav -->
+    <h2 class="toggler"><a><p class="uno">Open Menu</p><p class="dos">Close Menu</p></a></h2>
+
+    <nav class="main-nav flex" role="navigation">
+        <div class="links">
+            <p class="a0"><a>Canine (Dogs)</a></p>
+            <p class="a1"><a>Felines (Cats)</a></p>
+            <p class="a2"><a>Ursines (Bears)</a></p>
+        </div>
+    </nav>
+    <!-- Nav End -->
+</header>
+
+<main>
+    <div></div>
+    <!-- Handlebars -->
+
+    <section id="part1-2">
+
+    </section>
+
+    <!-- Handlebars End -->
+
+</main>
+<br>
+<br>
+<hr>
+<br>
+
+<!-- Footer Info -->
+	<footer id="EndInfo">Welcome to speciesCore!<br><br>Here you can learn about the taxonomy, names, locations of various species.</footer>
+
+</div>
+
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+</script>
+<script src="./basicScript.js" type="text/javascript"></script>
+<script src="./handlebars.js" type="text/javascript"></script>
+
+</body>
+</html>

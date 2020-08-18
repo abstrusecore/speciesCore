@@ -1,0 +1,112 @@
+html {
+    font-size: 14px;
+    font-family: 'Play';
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: green;
+}
+
+header {
+    position: fixed;
+    top: -1.5rem;
+    left: 25%;
+    right: 25%;
+    z-index: 100;
+    text-align: center;
+}
+
+main {
+    position: relative;
+    top: 5rem;
+}
+li {
+    line-height: 1.5rem;
+}
+
+.links {
+    display: none;
+}
+
+.links p {
+    display: inline-block;
+    margin: 0 2rem;
+    font-size: 1.5rem;
+}
+
+#goals {
+    height: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: none;
+}
+
+.toggler {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+
+}
+
+.toggler p {
+    padding: 0.4rem;
+}
+
+.uno {
+    display: visible;
+}
+
+.dos {
+    display: none;
+}
+
+#part1,
+#part2,
+#part3,
+#part4,
+#chart,
+#part1-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 1rem;
+  clear: both;
+}
+article{
+    flex: 1 1 400px;
+    margin: 0.5rem 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: none;
+}
+.r,
+thead {
+    background-color: red;
+}
+.g,
+tbody {
+    background-color: green;
+}
+.b,
+tfoot {
+    background-color: blue;
+}
+footer {
+    text-align: center;
+}
+video,
+embed,
+figure{
+    width: 100%;
+    height: auto;
+}
