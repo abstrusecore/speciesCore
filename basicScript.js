@@ -1,6 +1,7 @@
-var number = Math.round(Math.random() * 3.49)
 
 $(document).ready(() =>{
+  var number = Math.round(Math.random() * $('#A').children().length);
+  console.log(number);
   
   $(`#${number - 1}`).fadeToggle(700);
 

@@ -1,17 +1,17 @@
 const source = document.getElementById('speciesTemp').innerHTML;
 const template = Handlebars.compile(source);
-Handlebars.registerHelper('is0', function (value) {
-    console.log(value);
-    return value === 0;
-  });
-Handlebars.registerHelper('is1', function (value) {
-    console.log(value);
-    return value === 1;
-  });
-Handlebars.registerHelper('is2', function (value) {
-    console.log(value);
-    return value === 2;
-  });
+// Handlebars.registerHelper('is0', function (value) {
+//     console.log(value);
+//     return value === 0;
+//   });
+// Handlebars.registerHelper('is1', function (value) {
+//     console.log(value);
+//     return value === 1;
+//   });
+// Handlebars.registerHelper('is2', function (value) {
+//     console.log(value);
+//     return value === 2;
+//   });
 const context = {
 
   Carnivora: {
@@ -205,6 +205,129 @@ const context = {
       'Tremarctos':
       [
         'ornatus, Spectacled Bear, Northwest South America',
+      ]
+    },
+    'Hyaenidae':
+    {
+      'Proteles':
+      ['cristatus, Aardwolf, South/East Africa'],
+      'Crocuta':
+      ['crocuta, Spotted Hyena, Sub-Saharan Africa'],
+      'Parahyaena':
+      ['brunnea, Brown Hyena, Southern Africa'],
+      'Hyaena':
+      ['hyaena, Striped Hyena, Africa/Middle East/India']
+    },
+    'Procyonidae':
+    {
+      'Potos':
+      ['flavus, Kinkajou, Central/South America'],
+      'Procyon':
+      [
+        'cancrivorus, Crab Eating Raccoon, Central/South America',
+        'lotor, Common Raccoon, North America'
+      ],
+      'Bassariscus':
+      [
+        'sumichrasti, Cacomistle, Mexico/Panama/Costa Rica',
+        'astutus, Ringtail, North America',
+      ],
+      'Bassaricyon':
+      [
+        'medius, Western Lowland Olingo, Panama/Colombia/Ecuador',
+        'alleni, Eastern Lowland Olingo, South America',
+        'gabbii, Northern Olingo, Central America',
+        'neblina, Olinguito, Colombia/Ecuador',
+      ],
+      'Nasua':
+      [
+        'nasua, Ring-Tailed Coati, South America',
+        'narica, White-Nosed Coati, Central America/Mexico',
+      ],
+      'Nasuella':
+      [
+        'olivacea, Western Mountain Coati, Colombia/Ecuador',
+        'meridensis, Eastern Mountain Coati, Venezuela',
+      ]
+    },
+    'Herpestidae':
+    {
+      'Herpestes':
+      [
+        'ichneumon, Egyptian Mongoose, Mediterranean',
+        'edwardsii, Indian Grey Mongoose, India/West Asia',
+        'javanicus, Javan Mongoose, Asia',
+        'vitticollis, Stripe-Necked Mongoose, India/Sri Lanka',
+        'urva, Crab-Eating Mongoose, South/East Asia',
+        'smithii, Ruddy Mongoose, India/Sri Lanka',
+        'brachyurus, Short-Tailed Mongoose, Malaysia/Sumatra/Borneo',
+        'fuscus, Indian Brown Mongoose, India/Sri Lanka',
+        'semitorquatus, Collared Mongoose, Brunei/Indonesia/Malaysia',
+        'naso, Long-Nosed Mongoose, Central Africa',
+      ],
+      'Atilax':
+      [
+        'paludinosus, Marsh Mongoose, Sub-Saharan Africa'
+      ],
+      'Cynictis':
+      [
+        'penicillata, Yellow Mongoose, Southern Africa'
+      ],
+      'Ichneumia':
+      [
+        'albicauda, White-Tailed Mongoose, Africa'
+      ],
+      'Bdeogale':
+      [
+        'crassicauda, Bushy-Tailed Mongoose, Central Africa',
+        'nigripes, Black-Footed Mongoose, Central Africa',
+        "jacksoni, Jackson's Mongoose, Kenya/Uganda/Tanzania",
+        'omnivora, Sokoke Dog Mongoose, Kenya/Tanzania'
+      ],
+      'Galerella':
+      [
+        'sanguinea, Slender Mongoose, Sub-Saharan Africa',
+        'pulverulenta, Cape Gray Mongoose, Southern Africa',
+        'ochracea, Somalian Slender Mongoose, Somalia',
+        'flavescens, Angolan Slender Mongoose, Angola/Namibia',
+        'nigrata, Black Mongoose, Angola/Namibia',
+      ],
+      'Rhynchogale':
+      [
+        "melleri, Mellers's Mongoose, Central/Southern Africa"
+      ],
+      'Paracynictis':
+      [
+        "selousi, Selous's Mongoose, Southern Africa"
+      ],
+      'Mungos':
+      [
+        'mungo, Banded Mongoose, Africa',
+        'gambianus, Gambian Mongoose, Gambia/Nigeria'
+      ],
+      'Suricata':
+      [
+        'suricatta, Meerkat, Southern Africa'
+      ],
+      'Crossarchus':
+      [
+        'obscurus, Common Kusimanse, West Africa',
+        "alexandri, Alexander's Kusimanse, Central Africa",
+        'angsorgei, Angolan Kusimanse, Angola',
+        'platycephalus, Flat-Headed Kusimanse, West Africa'
+      ],
+      'Helogale':
+      [
+        'parvula, Common Dwarf Mongoose, Southern/East Africa',
+        'hirtula, Ethiopian Dwarf Mongoose, Ethiopia/Somalia'
+      ],
+      'Dologale':
+      [
+        "dybowskii, Pousargues's Mongoose, Central Africa"
+      ],
+      'Liberiictis':
+      [
+        'kuhni, Liberian Mongoose, Liberia/Ivory Coast'
       ]
     }
   }
